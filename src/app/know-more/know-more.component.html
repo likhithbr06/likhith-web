@@ -1,0 +1,24 @@
+
+<div class="container-fluid know-more-page wow ">
+    <header>
+        <nav class="row navbar bg-dark navbar-dark">
+          <div class="container-fluid flex-nav"> 
+              <!-- <img class="navbar-brand" width="60" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">	 -->
+              <button id="toggle-btn" type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button> 
+          </div>
+        </nav>
+       <app-navDrawer></app-navDrawer>
+       
+      </header>
+  <div class="sidebar ">
+    <a class="active wow bounceInUp" data-wow-delay=".30s" [routerLink]="['about-me']"><img src="https://img.icons8.com/office/30/000000/user-male-circle--v2.png">About Me</a>
+    <a class="wow bounceInUp" data-wow-delay=".40s" [routerLink]="['skills']"><img src="https://img.icons8.com/dusk/30/000000/developer.png">Skills</a>
+    <a class="wow bounceInUp" data-wow-delay=".60s" [routerLink]="['projects']"><img src="https://img.icons8.com/dusk/30/000000/group-of-projects.png">Projects</a>
+    <a class="wow bounceInUp" data-wow-delay=".50s" [routerLink]="['contact']"><img src="https://img.icons8.com/dusk/30/000000/contacts.png">Contact</a>
+  </div>
+  <section class="content"> 
+    <router-outlet></router-outlet>
+  </section>
+</div>

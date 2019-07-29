@@ -1,0 +1,84 @@
+.know-more-page{
+  // background: linear-gradient(134.72deg, rgba(74, 0, 216, 0.95), rgba(252, 63, 63, 0.95));
+  background-image: url(/src/assets/section-bg.png);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+   height: 100%;
+   position: absolute;
+   .bg-dark{
+    background-color: transparent !important;
+}
+.navbar-dark .navbar-toggler{
+    border: none;
+}
+.flex-nav{
+  justify-content: flex-end;
+}
+header{
+    display: none;
+}
+    .sidebar{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+        margin: 0;
+  padding: 0;
+  //width: 200px;
+ // background-color: #f1f1f1;
+  position: fixed;
+  height: 140px;
+  bottom: 30px;
+  overflow: hidden;
+        a{
+            text-decoration: none;
+            color: white;
+            font-size: 26px;
+            //padding: 60px;
+            text-align: center;
+            //background: black;
+            //background: -webkit-linear-gradient(-45deg, #082942 0, #183850 25%, #192c46 50%, #03073e 75%, #22254c 100%);
+            background: linear-gradient(66deg, #0b1449, #9d051f);
+            background-size: 400% 400%;
+            width: 120px;
+            height: 120px;
+            border-radius: 62px;
+            transition: all .53s;
+            img{
+                display: block;
+                position: relative;
+                left: 50px;
+                margin-top: 22px;
+            }
+            &:hover{
+                box-shadow: 17px 11px 44px 1px rgba(0,0,0,0.63);
+            }
+        }
+    }
+    .content{
+        margin-top: 56px;
+        margin-left: 18%;
+        padding: 15px;
+        -ms-overflow-x: hidden;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        position: relative;
+        overflow: hidden;
+    }
+    .sidenav{
+        display: none;
+    }
+}
+
+@media (max-width:575px){
+.know-more-page{
+    background-size: cover;
+}
+.sidenav{
+    display: block !important;
+}
+header{
+    display: block !important;
+}
+}

@@ -1,0 +1,22 @@
+<div class="floating-chat">
+  <i class="fa fa-comments" aria-hidden="true"></i>
+  <div class="chat">
+      <div class="header">
+          <span class="title">
+             Angular ChatBot!
+          </span>
+          <button>
+              X
+          </button>
+                       
+      </div>
+      <ul class="messages">
+        <h5 class="text-center">Ask me anything</h5>
+          <li class="{{msgs.image}}" *ngFor="let msgs of messages"> {{msgs.content}}</li>
+      </ul>
+      <div class="footer">
+          <input id="textBox" type="text" class="text-box"    #message_content/>
+          <button  (click)="sendMessage(message_content.value)">send</button>
+      </div>
+  </div>
+</div>

@@ -1,0 +1,25 @@
+<section id="intro" class="section">
+  <!-- <div class="overlay"></div> -->
+  <header>
+      <nav class="row navbar bg-dark navbar-dark">
+        <div class="container-fluid flex-nav"> 
+            <!-- <img class="navbar-brand" width="60" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">	 -->
+            <button id="toggle-btn" type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button> 
+        </div>
+      </nav>
+     <app-navDrawer></app-navDrawer>
+     
+    </header>
+    <div class="container-fluid intro-container">
+      <p class="text-1 col-md-12 col-sm-6 wow fadeInDown">Hai, I'm <span class="name">Likhith B R</span></p>
+      <p class="about wow bounceInLeft">I'm a web designer / developer based in Mangaluru, India. I have a passion for Front-End Development and love to create for web and mobile devices.</p>
+      <div class="social-icons wow fadeIn" data-wow-delay="1s">
+        <a><i class="fab fa-linkedin wow wobble" data-wow-delay="2s" aria-hidden="true"></i></a>
+        <a><i class="fab fa-facebook wow wobble" data-wow-delay="2s" aria-hidden="true"></i></a>
+        <a><i class="fab fa-instagram wow wobble" data-wow-delay="2s" aria-hidden="true"></i></a>
+      </div>
+      <button class="know-more wow bounceInUp"  [routerLink]="['/know-more'] "data-wow-delay="1s">Know More</button>
+    </div>
+</section>
